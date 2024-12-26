@@ -43,7 +43,7 @@
             <div class="nav-content">
                 <div class="logo">
                     <div class="logo-glow"></div>
-                    <span>Alex's Portfolio</span>
+                    <span>HeyAlex</span>
                 </div>
                 <div class="nav-links">
                     <a href="#about">About</a>
@@ -452,7 +452,7 @@
         <section class="contact-section" id="contact">
             <h2 class="section-title">Contact Me</h2>
             <div class="contact-container">
-                <form class="contact-form" action="mailto:your.email@example.com" method="post" enctype="text/plain">
+                <form class="contact-form" onsubmit="sendEmail(event)">
                     <div class="form-group">
                         <input type="text" id="name" name="name" required placeholder="Full Name">
                     </div>
@@ -467,6 +467,21 @@
                     </div>
                     <button type="submit" class="submit-btn">Send Message</button>
                 </form>
+
+                <script>
+                    function sendEmail(e) {
+                        e.preventDefault();
+                        
+                        const name = document.getElementById('name').value;
+                        const email = document.getElementById('email').value;
+                        const subject = document.getElementById('subject').value;
+                        const message = document.getElementById('message').value;
+                        
+                        const mailtoLink = `mailto:alexandru.barza10@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+                        
+                        window.location.href = mailtoLink;
+                    }
+                </script>
             </div>
         </section>
 
@@ -642,7 +657,7 @@
     <span class="tag">&gt;</span><br>
       <span class="tag">&lt;header</span> <span class="attr">className</span>=<span class="string">"header"</span><span class="tag">&gt;</span><br>
         <span class="tag">&lt;h1&gt;</span>Alex's Portfolio<span class="tag">&lt;/h1&gt;</span><br>
-        <span class="tag">&lt;p&gt;</span>Fullstack Developer<span class="tag">&lt;/p&gt;</span><br>
+        <span class="tag">&lt;p&gt;</span>Frontend Developer<span class="tag">&lt;/p&gt;</span><br>
       <span class="tag">&lt;/header&gt;</span><br>
     <span class="tag">&lt;/motion.div&gt;</span><br>
   );<br>
