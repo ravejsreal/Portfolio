@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - Alex's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .features-page {
+            min-height: 100vh;
+            background: linear-gradient(135deg, 
+                rgba(16, 16, 20, 0.95),
+                rgba(108, 92, 231, 0.1)
+            );
+            padding: 2rem;
+            position: relative;
+        }
+
+        .return-button {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            background: rgba(108, 92, 231, 0.1);
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            padding: 0.8rem 1.5rem;
+            border-radius: 100px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 100;
+            text-decoration: none;
+        }
+
+        .return-button:hover {
+            background: var(--primary);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 4rem auto;
+            padding: 1rem;
+            padding-bottom: 2rem;
+        }
+
+        .feature-box {
+            background: rgba(16, 16, 20, 0.8);
+            border: 1px solid rgba(108, 92, 231, 0.2);
+            border-radius: 24px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            border-color: var(--primary);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-title {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .feature-description {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        .feature-list li {
+            color: rgba(255, 255, 255, 0.7);
+            margin: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .feature-list li::before {
+            content: "→";
+            color: var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            .features-page {
+                padding: 1rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                margin: 2rem auto;
+            }
+
+            .feature-box {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Contact Section Styles */
+        .contact-section {
+            background: rgba(16, 16, 20, 0.8);
+            border: 1px solid rgba(108, 92, 231, 0.2);
+            border-radius: 24px;
+            padding: 3rem 2rem;
+            max-width: 1400px;
+            margin: 2rem auto 4rem;
+            text-align: center;
+        }
+
+        .contact-title {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .contact-subtitle {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .contact-method {
+            background: rgba(108, 92, 231, 0.1);
+            border: 1px solid rgba(108, 92, 231, 0.2);
+            border-radius: 16px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .contact-method:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            background: rgba(108, 92, 231, 0.15);
+        }
+
+        .contact-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .contact-method h3 {
+            color: #fff;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-method p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .contact-method a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .contact-method a:hover {
+            color: #fff;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .social-link {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(108, 92, 231, 0.1);
+            border: 1px solid rgba(108, 92, 231, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            background: var(--primary);
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .contact-section {
+                padding: 2rem 1rem;
+                margin: 1rem;
+            }
+
+            .contact-title {
+                font-size: 2rem;
+            }
+
+            .contact-subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 2rem;
+            }
+
+            .social-link {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+        }
+
+        .contact-button {
+            display: block;
+            width: fit-content;
+            margin: 3rem auto;
+            padding: 1rem 2.5rem;
+            background: rgba(108, 92, 231, 0.1);
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            font-size: 1.2rem;
+            border-radius: 100px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-button:hover {
+            background: var(--primary);
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
+        }
+
+        .contact-button::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(108, 92, 231, 0.1);
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform 0.6s ease;
+            z-index: -1;
+        }
+
+        .contact-button:hover::after {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        @media (max-width: 768px) {
+            .contact-button {
+                font-size: 1.1rem;
+                padding: 0.8rem 2rem;
+                margin: 2rem auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="noise"></div>
+    <div class="glow"></div>
+
+    <main class="features-page">
+        <a href="index.html" class="return-button">Return to Homepage</a>
+
+        <div class="features-grid">
+            <div class="feature-box">
+                <div class="feature-icon">🎮</div>
+                <h2 class="feature-title">Game Development</h2>
+                <p class="feature-description">Create engaging games with Python and Pygame</p>
+                <ul class="feature-list">
+                    <li>Snake Game with scoring system</li>
+                    <li>Collision detection and physics</li>
+                    <li>Sound effects and animations</li>
+                    <li>Responsive controls</li>
+                </ul>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon">🤖</div>
+                <h2 class="feature-title">AI & Machine Learning</h2>
+                <p class="feature-description">Build intelligent chatbots and NLP applications</p>
+                <ul class="feature-list">
+                    <li>NLTK-based natural language processing</li>
+                    <li>Pattern recognition and learning</li>
+                    <li>Contextual responses</li>
+                    <li>Conversation memory</li>
+                </ul>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon">⚛️</div>
+                <h2 class="feature-title">React Applications</h2>
+                <p class="feature-description">Modern web apps with React and Hooks</p>
+                <ul class="feature-list">
+                    <li>Todo app with local storage</li>
+                    <li>State management with hooks</li>
+                    <li>Styled-components for design</li>
+                    <li>Responsive layouts</li>
+                </ul>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon">🌤️</div>
+                <h2 class="feature-title">API Integration</h2>
+                <p class="feature-description">Real-time data and API applications</p>
+                <ul class="feature-list">
+                    <li>Weather dashboard with OpenWeatherMap</li>
+                    <li>Real-time data updates</li>
+                    <li>Error handling</li>
+                    <li>Beautiful UI animations</li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="index.html#contact" class="contact-button">Contact Me to discuss your project!</a>
+    </main>
+</body>
+</html>

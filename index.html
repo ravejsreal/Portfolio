@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .code-content {
+            font-family: 'JetBrains Mono', monospace;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+        .keyword { color: #C678DD; }
+        .string { color: #98C379; }
+        .function { color: #61AFEF; }
+        .tag { color: #E06C75; }
+        .attr { color: #D19A66; }
+        .property { color: #56B6C2; }
+        .selector { color: #E06C75; }
+        .value { color: #98C379; }
+        .color { color: #56B6C2; }
+        .number { color: #D19A66; }
+        .punctuation { color: #ABB2BF; }
+        .comment { color: #7F848E; }
+        .touch-button {
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="noise"></div>
+    <div class="glow"></div>
+    
+    <nav class="floating-nav">
+        <div class="nav-pill">
+            <div class="nav-content">
+                <div class="logo">
+                    <div class="logo-glow"></div>
+                    <span>HeyAlex</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="animated-text">
+                    <h1>
+                        <span class="gradient-text">Hey, I'm Alex</span>
+                        <div class="text-reveal">
+                            <span>Crafting digital</span>
+                            <span class="highlight">immersive</span>
+                        </div>
+                        <span>experiences that inspire.</span>
+                    </h1>
+                </div>
+                
+                <p class="bio">Welcome to my world. I love building modern, pixel-perfect websites for personal and business use.</p>
+                
+                <div class="cta-group">
+                    <div class="social-pills">
+                        <a href="https://discord.com/users/1184170593386496063" class="pill" target="_blank">
+                            <div class="pill-content">
+                                <span class="icon">💬</span>
+                                <span>Discord</span>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="#contact" class="touch-button">
+                        <span>Get in Touch</span>
+                        <div class="button-glow"></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="code-animation">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-buttons">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-title">portfolio.jsx</div>
+                    </div>
+                    <div class="code-content">
+                        <pre class="typing-code"></pre>
+                    </div>
+                </div>
+                <div class="code-particles"></div>
+            </div>
+        </section>
+
+        <section class="featured">
+            <div class="featured-brands">
+                <span class="label">developer of</span>
+                <div class="brand-list">
+                    <div class="brand" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">RecEzy WEB</div>
+                    <div class="brand" style="font-family: 'JetBrains Mono', monospace; letter-spacing: 1px;">AdevTech WEB</div>
+                    <div class="brand" style="font-family: 'Space Grotesk', sans-serif; font-style: italic;">ProVocis</div>
+                    <div class="brand" style="font-family: 'JetBrains Mono', monospace; font-weight: 600;">Cloud Hub</div>
+                    <div class="brand" style="font-family: 'Space Grotesk', sans-serif; letter-spacing: 2px;">GSV2P</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p>I'm Alex, a passionate full-stack developer with a love for creating elegant solutions to complex problems. My journey in software development has led me to work with a diverse range of technologies and frameworks.</p>
+                    <p>I specialize in building modern web applications using React, TypeScript, and Node.js, with a strong focus on clean code and optimal performance. My experience extends to cloud technologies and containerization, ensuring scalable and maintainable solutions.</p>
+                </div>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <i class="tech-icon devicon-react-original"></i>
+                        <h3 class="tech-name">React</h3>
+                        <span class="tech-level">Advanced</span>
+                        <div class="tech-progress">
+                            <div class="progress-bar" style="--scale: 0.95"></div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <i class="tech-icon devicon-typescript-plain"></i>
+                        <h3 class="tech-name">TypeScript</h3>
+                        <span class="tech-level">Advanced</span>
+                        <div class="tech-progress">
+                            <div class="progress-bar" style="--scale: 0.90"></div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <i class="tech-icon devicon-nodejs-plain"></i>
+                        <h3 class="tech-name">Node.js</h3>
+                        <span class="tech-level">Proficient</span>
+                        <div class="tech-progress">
+                            <div class="progress-bar" style="--scale: 0.85"></div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <i class="tech-icon devicon-python-plain"></i>
+                        <h3 class="tech-name">Python</h3>
+                        <span class="tech-level">Advanced</span>
+                        <div class="tech-progress">
+                            <div class="progress-bar" style="--scale: 0.88"></div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <i class="tech-icon devicon-mongodb-plain"></i>
+                        <h3 class="tech-name">MongoDB</h3>
+                        <span class="tech-level">Proficient</span>
+                        <div class="tech-progress">
+                            <div class="progress-bar" style="--scale: 0.82"></div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <i class="tech-icon devicon-docker-plain"></i>
+                        <h3 class="tech-name">Docker</h3>
+                        <span class="tech-level">Proficient</span>
+                        <div class="tech-progress">
+                            <div class="progress-bar" style="--scale: 0.80"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="section-header">
+                <h2 class="gradient-title">Featured Projects</h2>
+                <p class="section-subtitle">Transforming ideas into reality</p>
+            </div>
+            
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-icon">🌐</div>
+                            <div class="project-status completed">Completed</div>
+                        </div>
+                        <h3>RecEzy WEB</h3>
+                        <p>A modern recommendation platform featuring an intuitive interface and seamless user experience.</p>
+                        <div class="tech-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.recezy.ai" target="_blank" class="project-link">
+                                <span>View Live Project →</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card in-progress">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-icon">📖</div>
+                            <div class="project-status in-progress">In Development</div>
+                        </div>
+                        <h3>ProVocis</h3>
+                        <p>Revolutionary voice communication platform with cross-platform mobile applications.</p>
+                        <div class="tech-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Swift</span>
+                            <span>Kotlin</span>
+                        </div>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 67.5%"></div>
+                            </div>
+                            <div class="progress-text">
+                                <span>Web Platform</span>
+                                <span>100%</span>
+                            </div>
+                            <div class="progress-text">
+                                <span>Mobile Apps</span>
+                                <span>35%</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://provocis.com" target="_blank" class="project-link">
+                                <span>View Website →</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card in-progress">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-icon">⚡</div>
+                            <div class="project-status in-progress">In Development</div>
+                        </div>
+                        <h3>AdevTech WEB</h3>
+                        <p>Next-generation development platform revolutionizing project management and team collaboration.</p>
+                        <div class="tech-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 45%"></div>
+                            </div>
+                            <div class="progress-text">
+                                <span>Overall Progress</span>
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="ai-portal">
+            <div class="portal-container">
+                <header class="portal-header">
+                    <span class="portal-badge">Experimental</span>
+                    <h2>AI Development Portal</h2>
+                    <p class="portal-subtitle">Experience the future of coding with our advanced AI assistant</p>
+                </header>
+
+                <div class="portal-interface">
+                    <div class="portal-ring-container">
+                        <div class="portal-ring"></div>
+                        <div class="portal-ring"></div>
+                        <div class="portal-ring"></div>
+                        <div class="portal-core">
+                            <div class="core-glow"></div>
+                            <span class="core-symbol">AI</span>
+                        </div>
+                    </div>
+
+                    <div class="portal-terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-controls">
+                                <span class="control"></span>
+                                <span class="control"></span>
+                                <span class="control"></span>
+                            </div>
+                            <span class="terminal-title">AI Assistant Terminal</span>
+                        </div>
+                        <div class="terminal-content">
+                            <div class="terminal-line">
+                                <span class="prompt">$</span> Initializing AI Core...
+                            </div>
+                            <div class="terminal-line">
+                                <span class="success">[OK]</span> Neural networks loaded
+                            </div>
+                            <div class="terminal-line">
+                                <span class="success">[OK]</span> Language models activated
+                            </div>
+                            <div class="terminal-line">
+                                <span class="prompt">$</span> <span class="typing">Running diagnostics...</span>
+                            </div>
+                            <div class="terminal-line status-line">
+                                System Status: <span class="status-text">READY</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="prompt">></span> <span class="cursor"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portal-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">99.9%</div>
+                            <div class="stat-label">Accuracy Rate</div>
+                            <div class="stat-bar"><div class="stat-fill" style="width: 99.9%"></div></div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">&lt;50ms</div>
+                            <div class="stat-label">Response Time</div>
+                            <div class="stat-bar"><div class="stat-fill" style="width: 95%"></div></div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">∞</div>
+                            <div class="stat-label">Possibilities</div>
+                            <div class="stat-bar"><div class="stat-fill" style="width: 100%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portal-features">
+                    <div class="feature">
+                        <div class="feature-icon">🧠</div>
+                        <h3>Neural Code Generation</h3>
+                        <p>Advanced AI algorithms that understand context and generate optimal code solutions in real-time.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Real-time Processing</h3>
+                        <p>Lightning-fast code analysis and generation with sub-millisecond response times.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🔄</div>
+                        <h3>Adaptive Learning</h3>
+                        <p>Continuously evolving system that learns from interactions to provide better solutions.</p>
+                    </div>
+                </div>
+
+                <button class="portal-button" id="portalButton" onclick="window.location.href='aiassistant.html'">
+                    <span class="button-text">Access AI Portal</span>
+                    <span class="button-glow"></span>
+                </button>
+
+                <div class="portal-modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>AI Development Assistant</h3>
+                            <button class="modal-close">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="template-options">
+                                <h4>Quick Start Templates</h4>
+                                <div class="template-grid">
+                                    <div class="template-card" data-template="react-app">
+                                        <div class="template-icon">⚛️</div>
+                                        <h5>React Application</h5>
+                                        <p>Modern React app with TypeScript and Vite</p>
+                                        <div class="tech-tags">
+                                            <span>React</span>
+                                            <span>TypeScript</span>
+                                            <span>Vite</span>
+                                        </div>
+                                    </div>
+                                    <div class="template-card" data-template="python-api">
+                                        <div class="template-icon">🐍</div>
+                                        <h5>Python FastAPI</h5>
+                                        <p>RESTful API with FastAPI and PostgreSQL</p>
+                                        <div class="tech-tags">
+                                            <span>Python</span>
+                                            <span>FastAPI</span>
+                                            <span>PostgreSQL</span>
+                                        </div>
+                                    </div>
+                                    <div class="template-card" data-template="next-app">
+                                        <div class="template-icon">📱</div>
+                                        <h5>Next.js App</h5>
+                                        <p>Full-stack Next.js with Tailwind CSS</p>
+                                        <div class="tech-tags">
+                                            <span>Next.js</span>
+                                            <span>Tailwind</span>
+                                            <span>Prisma</span>
+                                        </div>
+                                    </div>
+                                    <div class="template-card" data-template="node-express">
+                                        <div class="template-icon">🚀</div>
+                                        <h5>Node.js Backend</h5>
+                                        <p>Express.js API with MongoDB</p>
+                                        <div class="tech-tags">
+                                            <span>Node.js</span>
+                                            <span>Express</span>
+                                            <span>MongoDB</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ai-interface">
+                                <div class="chat-section">
+                                    <div class="chat-messages">
+                                        <div class="chat-message ai">
+                                            Welcome! I can help you with:
+                                            • Generating code templates
+                                            • Solving coding problems
+                                            • Explaining concepts
+                                            • Debugging issues
+                                            
+                                            Select a template above or ask me anything!
+                                        </div>
+                                    </div>
+                                    <div class="chat-input-container">
+                                        <input type="text" placeholder="Ask me anything about coding..." />
+                                        <button class="send-button">Send</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="code-section">
+                                    <div class="code-header">
+                                        <span class="code-title">Code Output</span>
+                                        <button class="copy-button">Copy Code</button>
+                                    </div>
+                                    <div class="code-display">
+                                        <pre><code class="code-content">// Code will appear here
+// Select a template or ask a question to get started</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-container">
+                <form class="contact-form" action="mailto:your.email@example.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder="Full Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required placeholder="Your Message" rows="6"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <style>
+            .contact-section {
+                padding: 5rem 2rem;
+                background: rgba(16, 16, 20, 0.8);
+                border: 1px solid rgba(108, 92, 231, 0.2);
+                border-radius: 24px;
+                margin: 2rem auto;
+                max-width: 1000px;
+            }
+
+            .section-title {
+                color: var(--primary);
+                font-size: 2.5rem;
+                text-align: center;
+                margin-bottom: 3rem;
+            }
+
+            .contact-container {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            .contact-form {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .form-group {
+                position: relative;
+            }
+
+            .form-group input,
+            .form-group textarea {
+                width: 100%;
+                padding: 1rem 1.5rem;
+                background: rgba(255, 255, 255, 0.05);
+                border: none;
+                border-radius: 12px;
+                color: #fff;
+                font-size: 1rem;
+                transition: all 0.3s ease;
+                box-shadow: inset 0 0 0 1px rgba(108, 92, 231, 0.2);
+            }
+
+            .form-group input:focus,
+            .form-group textarea:focus {
+                outline: none;
+                box-shadow: inset 0 0 0 1px var(--primary),
+                            0 5px 15px rgba(108, 92, 231, 0.2);
+                background: rgba(255, 255, 255, 0.1);
+                transform: translateY(-2px);
+            }
+
+            .form-group input::placeholder,
+            .form-group textarea::placeholder {
+                color: rgba(255, 255, 255, 0.5);
+            }
+
+            .form-group textarea {
+                resize: none;
+                height: 150px;
+                min-height: 150px;
+                max-height: 150px;
+                line-height: 1.5;
+                background: rgba(255, 255, 255, 0.05);
+                animation: formAppear 0.5s ease forwards;
+            }
+
+            @keyframes formAppear {
+                0% {
+                    opacity: 0;
+                    transform: translateY(10px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .form-group input {
+                animation: formAppear 0.5s ease forwards;
+                animation-delay: calc(var(--i) * 0.1s);
+            }
+
+            .submit-btn {
+                animation: formAppear 0.5s ease forwards;
+                animation-delay: 0.4s;
+            }
+
+            .form-group {
+                position: relative;
+                --i: 1;
+            }
+
+            .form-group:nth-child(1) { --i: 1; }
+            .form-group:nth-child(2) { --i: 2; }
+            .form-group:nth-child(3) { --i: 3; }
+            .form-group:nth-child(4) { --i: 4; }
+
+            .form-group input:focus,
+            .form-group textarea:focus {
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(108, 92, 231, 0.2);
+            }
+
+            .submit-btn {
+                background: var(--primary);
+                color: #fff;
+                border: none;
+                padding: 1rem 2rem;
+                border-radius: 12px;
+                font-size: 1.1rem;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                margin-top: 1rem;
+                font-weight: 500;
+                letter-spacing: 0.5px;
+            }
+
+            .submit-btn:hover {
+                background: rgba(108, 92, 231, 0.9);
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
+            }
+
+            @media (max-width: 768px) {
+                .contact-section {
+                    padding: 3rem 1rem;
+                    margin: 1rem;
+                }
+
+                .section-title {
+                    font-size: 2rem;
+                    margin-bottom: 2rem;
+                }
+
+                .form-group input,
+                .form-group textarea {
+                    padding: 0.8rem 1.2rem;
+                }
+
+                .submit-btn {
+                    padding: 0.8rem 1.5rem;
+                    font-size: 1rem;
+                }
+            }
+        </style>
+    </main>
+
+    <script>
+    const codeSnippets = [
+        {
+            title: "portfolio.jsx",
+            code: `<span class="keyword">import</span> React, { useState, useEffect } <span class="keyword">from</span> <span class="string">'react'</span>;
+<span class="keyword">import</span> { motion } <span class="keyword">from</span> <span class="string">'framer-motion'</span>;<br>
+<br>
+<span class="keyword">const</span> <span class="function">Portfolio</span> = () => {<br>
+  <span class="keyword">const</span> [isVisible, setIsVisible] = <span class="function">useState</span>(false);<br>
+<br>
+  <span class="function">useEffect</span>(() => {<br>
+    <span class="function">setIsVisible</span>(true);<br>
+  }, []);<br>
+<br>
+  <span class="keyword">return</span> (<br>
+    <span class="tag">&lt;motion.div</span><br>
+      <span class="attr">className</span>=<span class="string">"portfolio"</span><br>
+      <span class="attr">initial</span>={{ <span class="property">opacity</span>: <span class="number">0</span> }}<br>
+      <span class="attr">animate</span>={{ <span class="property">opacity</span>: <span class="number">1</span> }}<br>
+    <span class="tag">&gt;</span><br>
+      <span class="tag">&lt;header</span> <span class="attr">className</span>=<span class="string">"header"</span><span class="tag">&gt;</span><br>
+        <span class="tag">&lt;h1&gt;</span>Alex's Portfolio<span class="tag">&lt;/h1&gt;</span><br>
+        <span class="tag">&lt;p&gt;</span>Frontend Developer<span class="tag">&lt;/p&gt;</span><br>
+      <span class="tag">&lt;/header&gt;</span><br>
+    <span class="tag">&lt;/motion.div&gt;</span><br>
+  );<br>
+};<br>
+<br>
+<span class="keyword">export</span> <span class="keyword">default</span> Portfolio;<br>`
+        },
+        {
+            title: "styles.css",
+            code: `<span class="selector">.portfolio</span> <span class="punctuation">{</span><br>
+  <span class="property">min-height</span><span class="punctuation">:</span> <span class="value">100vh</span><span class="punctuation">;</span><br>
+  <span class="property">background</span><span class="punctuation">:</span> <span class="function">linear-gradient</span><span class="punctuation">(</span><br>
+    <span class="number">135deg</span><span class="punctuation">,</span><br>
+    <span class="color">#1a1a1a</span> <span class="number">0%</span><span class="punctuation">,</span><br>
+    <span class="color">#2d2d2d</span> <span class="number">100%</span><br>
+  <span class="punctuation">)</span><span class="punctuation">;</span><br>
+  <span class="property">color</span><span class="punctuation">:</span> <span class="color">#fff</span><span class="punctuation">;</span><br>
+<span class="punctuation">}</span><br>
+<br>
+<span class="selector">.header</span> <span class="punctuation">{</span><br>
+  <span class="property">padding</span><span class="punctuation">:</span> <span class="value">2rem</span><span class="punctuation">;</span><br>
+  <span class="property">text-align</span><span class="punctuation">:</span> <span class="value">center</span><span class="punctuation">;</span><br>
+  <span class="property">background</span><span class="punctuation">:</span> <span class="function">rgba</span><span class="punctuation">(</span><br>
+    <span class="number">255</span><span class="punctuation">,</span><br>
+    <span class="number">255</span><span class="punctuation">,</span><br>
+    <span class="number">255</span><span class="punctuation">,</span><br>
+    <span class="number">0.1</span><br>
+  <span class="punctuation">)</span><span class="punctuation">;</span><br>
+  <span class="property">border-radius</span><span class="punctuation">:</span> <span class="value">12px</span><span class="punctuation">;</span><br>
+  <span class="property">backdrop-filter</span><span class="punctuation">:</span> <span class="function">blur</span><span class="punctuation">(</span><span class="value">8px</span><span class="punctuation">)</span><span class="punctuation">;</span><br>
+<span class="punctuation">}</span><br>`
+        },
+        {
+            title: "server.js",
+            code: `<span class="comment">// Import dependencies</span><br>
+<span class="keyword">const</span> express = <span class="function">require</span>(<span class="string">'express'</span>);<br>
+<span class="keyword">const</span> app = <span class="function">express</span>();<br>
+<br>
+<span class="comment">// Configure middleware</span><br>
+app.<span class="function">use</span>(express.<span class="function">json</span>());<br>
+app.<span class="function">use</span>(express.<span class="function">static</span>(<span class="string">'public'</span>));<br>
+<br>
+<span class="comment">// Define routes</span><br>
+app.<span class="function">get</span>(<span class="string">'/api'</span>, (req, res) => {<br>
+  res.<span class="function">json</span>({<br>
+    <span class="property">message</span>: <span class="string">'Hello!'</span>,<br>
+    <span class="property">status</span>: <span class="string">'success'</span><br>
+  });<br>
+});<br>
+<br>
+<span class="comment">// Start server</span><br>
+<span class="keyword">const</span> PORT = process.<span class="property">env</span>.<span class="property">PORT</span> || <span class="number">3000</span>;<br>
+<br>
+app.<span class="function">listen</span>(PORT, () => {<br>
+  console.<span class="function">log</span>(<span class="string">'Server running on port'</span>, PORT);<br>
+});<br>`
+        },
+        {
+            title: "animation.ts",
+            code: `<span class="keyword">interface</span> AnimationProps {<br>
+  duration: <span class="keyword">number</span>;<br>
+  easing: <span class="keyword">string</span>;<br>
+}<br>
+<br>
+<span class="keyword">export const</span> <span class="function">fadeIn</span> = ({<br>
+  duration = <span class="number">0.6</span>,<br>
+  easing = <span class="string">'easeOut'</span><br>
+}: AnimationProps) => ({<br>
+  initial: { <span class="property">opacity</span>: <span class="number">0</span>, <span class="property">y</span>: <span class="number">20</span> },<br>
+  animate: {<br>
+    <span class="property">opacity</span>: <span class="number">1</span>,<br>
+    <span class="property">y</span>: <span class="number">0</span><br>
+  },<br>
+  transition: {<br>
+    <span class="property">duration</span>,<br>
+    <span class="property">ease</span>: easing<br>
+  }<br>
+});<br>`
+        },
+        {
+            title: "theme.js",
+            code: `<span class="keyword">export const</span> theme = {<br>
+  colors: {<br>
+    <span class="property">primary</span>: <span class="string">'#6C5CE7'</span>,<br>
+    <span class="property">secondary</span>: <span class="string">'#A29BFE'</span>,<br>
+    <span class="property">background</span>: <span class="string">'#1A1A1A'</span>,<br>
+    <span class="property">text</span>: <span class="string">'#FFFFFF'</span>,<br>
+    <span class="property">accent</span>: <span class="string">'#00FF9D'</span><br>
+  },<br>
+  <span class="property">fonts</span>: {<br>
+    <span class="property">body</span>: <span class="string">'Space Grotesk'</span>,<br>
+    <span class="property">code</span>: <span class="string">'JetBrains Mono'</span><br>
+  },<br>
+  <span class="property">shadows</span>: {<br>
+    <span class="property">glow</span>: <span class="string">'0 0 20px rgba(108, 92, 231, 0.3)'</span><br>
+  }<br>
+};<br>`
+        },
+        {
+            title: "api.py",
+            code: `<span class="keyword">from</span> fastapi <span class="keyword">import</span> FastAPI<br>
+<span class="keyword">from</span> pydantic <span class="keyword">import</span> BaseModel<br>
+<br>
+app = FastAPI()<br>
+<br>
+<span class="keyword">class</span> <span class="function">Project</span>(BaseModel):<br>
+    title: <span class="keyword">str</span><br>
+    description: <span class="keyword">str</span><br>
+    image_url: <span class="keyword">str</span><br>
+<br>
+<span class="decorator">@app.get</span>(<span class="string">"/projects"</span>)<br>
+<span class="keyword">async def</span> <span class="function">get_projects</span>():<br>
+    <span class="keyword">return</span> {<br>
+        <span class="string">"projects"</span>: [<br>
+            {<br>
+                <span class="string">"title"</span>: <span class="string">"Portfolio"</span>,<br>
+                <span class="string">"description"</span>: <span class="string">"Personal website"</span><br>
+            }<br>
+        ]<br>
+    }<br>`
+        },
+        {
+            title: "database.sql",
+            code: `<span class="keyword">CREATE TABLE</span> projects (<br>
+  id <span class="keyword">SERIAL PRIMARY KEY</span>,<br>
+  title <span class="keyword">VARCHAR</span>(<span class="number">255</span>) <span class="keyword">NOT NULL</span>,<br>
+  description <span class="keyword">TEXT</span>,<br>
+  image_url <span class="keyword">VARCHAR</span>(<span class="number">512</span>),<br>
+  created_at <span class="keyword">TIMESTAMP DEFAULT</span> CURRENT_TIMESTAMP<br>
+);<br>
+<br>
+<span class="keyword">INSERT INTO</span> projects (title, description)<br>
+<span class="keyword">VALUES</span> (<br>
+  <span class="string">'Portfolio'</span>,<br>
+  <span class="string">'A modern portfolio website with animations'</span><br>
+);<br>`
+        },
+        {
+            title: "utils.ts",
+            code: `<span class="keyword">export const</span> <span class="function">debounce</span> = <<span class="keyword">T</span>><br>
+(fn: (...args: <span class="keyword">any</span>[]) => <span class="keyword">T</span>, delay: <span class="keyword">number</span>) => {<br>
+  <span class="keyword">let</span> timeoutId: ReturnType<<span class="keyword">typeof</span> setTimeout>;<br>
+<br>
+  <span class="keyword">return</span> (...args: <span class="keyword">any</span>[]) => {<br>
+    <span class="keyword">if</span> (timeoutId) {<br>
+      clearTimeout(timeoutId);<br>
+    }<br>
+<br>
+    timeoutId = setTimeout(() => {<br>
+      fn(...args);<br>
+    }, delay);<br>
+  };<br>
+};<br>`
+        },
+        {
+            title: "docker-compose.yml",
+            code: `<span class="property">version</span>: <span class="string">'3'</span><br>
+<br>
+<span class="property">services</span>:<br>
+  <span class="property">frontend</span>:<br>
+    <span class="property">build</span>: <span class="string">'./frontend'</span><br>
+    <span class="property">ports</span>:<br>
+      - <span class="string">'3000:3000'</span><br>
+    <span class="property">environment</span>:<br>
+      - <span class="string">NODE_ENV=production</span><br>
+<br>
+  <span class="property">backend</span>:<br>
+    <span class="property">build</span>: <span class="string">'./backend'</span><br>
+    <span class="property">ports</span>:<br>
+      - <span class="string">'8000:8000'</span><br>
+    <span class="property">depends_on</span>:<br>
+      - <span class="string">db</span><br>`
+        },
+        {
+            title: "hooks.tsx",
+            code: `<span class="keyword">import</span> { useState, useEffect } <span class="keyword">from</span> <span class="string">'react'</span>;<br>
+<br>
+<span class="keyword">export const</span> <span class="function">useScrollPosition</span> = () => {<br>
+  <span class="keyword">const</span> [scrollY, setScrollY] = <span class="function">useState</span>(<span class="number">0</span>);<br>
+<br>
+  <span class="function">useEffect</span>(() => {<br>
+    <span class="keyword">const</span> <span class="function">handleScroll</span> = () => {<br>
+      setScrollY(window.scrollY);<br>
+    };<br>
+<br>
+    window.<span class="function">addEventListener</span>(<span class="string">'scroll'</span>, handleScroll);<br>
+    <span class="keyword">return</span> () => {<br>
+      window.<span class="function">removeEventListener</span>(<span class="string">'scroll'</span>, handleScroll);<br>
+    };<br>
+  }, []);<br>
+<br>
+  <span class="keyword">return</span> scrollY;<br>
+};<br>`
+        },
+        {
+            title: "animations.css",
+            code: `<span class="selector">@keyframes</span> <span class="function">float</span> {<br>
+  <span class="number">0%</span> {<br>
+    <span class="property">transform</span>: <span class="function">translateY</span>(<span class="number">0px</span>);<br>
+  }<br>
+  <span class="number">50%</span> {<br>
+    <span class="property">transform</span>: <span class="function">translateY</span>(<span class="number">-20px</span>);<br>
+  }<br>
+  <span class="number">100%</span> {<br>
+    <span class="property">transform</span>: <span class="function">translateY</span>(<span class="number">0px</span>);<br>
+  }<br>
+}<br>
+<br>
+<span class="selector">.floating</span> {<br>
+  <span class="property">animation</span>: float <span class="number">3s</span> ease-in-out infinite;<br>
+}<br>
+<br>
+<span class="selector">@keyframes</span> <span class="function">glow</span> {<br>
+  <span class="number">0%</span> {<br>
+    <span class="property">box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> <span class="color">#6C5CE7</span>;<br>
+  }<br>
+  <span class="number">100%</span> {<br>
+    <span class="property">box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">20px</span> <span class="color">#6C5CE7</span>;<br>
+  }<br>
+}<br>`
+        },
+        {
+            title: "config.go",
+            code: `<span class="keyword">package</span> config<br>
+<br>
+<span class="keyword">import</span> (<br>
+  <span class="string">"os"</span><br>
+  <span class="string">"github.com/joho/godotenv"</span><br>
+)<br>
+<br>
+<span class="keyword">type</span> Config <span class="keyword">struct</span> {<br>
+  Port     <span class="keyword">string</span><br>
+  DbURL    <span class="keyword">string</span><br>
+  ApiKey   <span class="keyword">string</span><br>
+}<br>
+<br>
+<span class="keyword">func</span> <span class="function">LoadConfig</span>() (*Config, <span class="keyword">error</span>) {<br>
+  <span class="function">godotenv</span>.<span class="function">Load</span>()<br>
+<br>
+  <span class="keyword">return</span> &Config{<br>
+    Port: os.<span class="function">Getenv</span>(<span class="string">"PORT"</span>),<br>
+    DbURL: os.<span class="function">Getenv</span>(<span class="string">"DATABASE_URL"</span>),<br>
+    ApiKey: os.<span class="function">Getenv</span>(<span class="string">"API_KEY"</span>),<br>
+  }, <span class="keyword">nil</span><br>
+}<br>`
+        }
+    ];
+
+    const codeDisplay = document.querySelector('.typing-code');
+    const codeLines = document.querySelector('.code-lines');
+    const titleDisplay = document.querySelector('.window-title');
+    let currentSnippetIndex = 0;
+    let isAnimating = false;
+
+    function createParticles() {
+        const particles = document.querySelector('.code-particles');
+        for (let i = 0; i < 50; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.setProperty('--delay', `${Math.random() * 5}s`);
+            particle.style.setProperty('--size', `${Math.random() * 2 + 1}px`);
+            particle.style.setProperty('--speed', `${Math.random() * 20 + 10}s`);
+            particles.appendChild(particle);
+        }
+    }
+
+    async function typeCode(code) {
+        codeDisplay.innerHTML = '';
+        let currentText = '';
+        
+        for (let i = 0; i < code.length; i++) {
+            currentText += code[i];
+            codeDisplay.innerHTML = currentText;
+            
+            // Auto-scroll if near bottom
+            const isNearBottom = codeDisplay.parentElement.scrollHeight - codeDisplay.parentElement.scrollTop - codeDisplay.parentElement.clientHeight < 50;
+            if (isNearBottom) {
+                codeDisplay.parentElement.scrollTo({
+                    top: codeDisplay.parentElement.scrollHeight,
+                    behavior: 'smooth'
+                });
+            }
+            
+            await new Promise(resolve => setTimeout(resolve, Math.random() * 10 + 5));
+        }
+        
+        await new Promise(resolve => setTimeout(resolve, 3000));
+    }
+
+    async function deleteCode() {
+        const text = codeDisplay.innerHTML;
+        let currentText = text;
+        
+        while (currentText.length > 0) {
+            currentText = currentText.slice(0, -1);
+            codeDisplay.innerHTML = currentText;
+            await new Promise(resolve => setTimeout(resolve, 5));
+        }
+        
+        await new Promise(resolve => setTimeout(resolve, 300));
+    }
+
+    async function animateSnippets() {
+        while (true) {
+            if (!isAnimating) {
+                isAnimating = true;
+                const snippet = codeSnippets[currentSnippetIndex];
+                
+                // Update title with fade
+                titleDisplay.style.opacity = '0';
+                await new Promise(resolve => setTimeout(resolve, 300));
+                titleDisplay.textContent = snippet.title;
+                titleDisplay.style.opacity = '1';
+                
+                // Type code
+                await typeCode(snippet.code);
+                
+                // Delete code
+                await deleteCode();
+                
+                // Move to next snippet
+                currentSnippetIndex = (currentSnippetIndex + 1) % codeSnippets.length;
+                
+                isAnimating = false;
+            }
+            
+            await new Promise(resolve => setTimeout(resolve, 100));
+        }
+    }
+
+    // Initialize
+    titleDisplay.style.transition = 'opacity 0.3s ease';
+    animateSnippets();
+    createFloatingParticles();
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const portalButton = document.getElementById('portalButton');
+        const portalModal = document.querySelector('.portal-modal');
+        const modalClose = document.querySelector('.modal-close');
+        const chatInput = document.querySelector('.chat-input-container input');
+        const sendButton = document.querySelector('.send-button');
+        const chatMessages = document.querySelector('.chat-messages');
+        const codeDisplay = document.querySelector('.code-content');
+        const copyButton = document.querySelector('.copy-button');
+        const templateCards = document.querySelectorAll('.template-card');
+
+        function addMessage(text, isAI = false) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `chat-message ${isAI ? 'ai' : 'user'}`;
+            messageDiv.textContent = text;
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function displayCode(code) {
+            codeDisplay.textContent = code;
+        }
+
+        function handleTemplateSelection(templateId) {
+            const template = templates[templateId];
+            if (template) {
+                const mainFile = Object.entries(template.files)[0];
+                displayCode(mainFile[1]);
+                addMessage(`I've loaded the template. Would you like to see a different file or have me explain any part of the code?`, true);
+            }
+        }
+
+        templateCards.forEach(card => {
+            card.addEventListener('click', () => {
+                templateCards.forEach(c => c.classList.remove('active'));
+                card.classList.add('active');
+                handleTemplateSelection(card.dataset.template);
+            });
+        });
+
+        function handleUserMessage() {
+            const message = chatInput.value.trim();
+            if (message) {
+                addMessage(message);
+                chatInput.value = '';
+                
+                setTimeout(() => {
+                    let response = "I can help you with various programming tasks. Would you like to see a specific template or have me generate some custom code for you?";
+                    addMessage(response, true);
+                }, 1000);
+            }
+        }
+
+        copyButton.addEventListener('click', () => {
+            navigator.clipboard.writeText(codeDisplay.textContent)
+                .then(() => {
+                    copyButton.textContent = 'Copied!';
+                    setTimeout(() => {
+                        copyButton.textContent = 'Copy Code';
+                    }, 2000);
+                });
+        });
+
+        function openModal() {
+            portalModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            chatInput.focus();
+        }
+
+        function closeModal() {
+            portalModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        portalButton.addEventListener('click', openModal);
+        modalClose.addEventListener('click', closeModal);
+        sendButton.addEventListener('click', handleUserMessage);
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                handleUserMessage();
+            }
+        });
+
+        portalModal.addEventListener('click', (e) => {
+            if (e.target === portalModal) {
+                closeModal();
+            }
+        });
+    });
+    </script>
+</body>
+</html>
