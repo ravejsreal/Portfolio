@@ -1,0 +1,1025 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandru - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // Initialize EmailJS with your public key
+            emailjs.init("8MY2X-qaq119gF_jJ"); // User's actual EmailJS public key
+        })();
+    </script>
+</head>
+<body>
+    <div class="cursor"></div>
+    
+    <div class="menu-overlay">
+        <div class="close-menu">×</div>
+        <div class="menu-content">
+            <ul class="menu-links">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+            
+            <div class="menu-categories">
+                <div class="menu-category">
+                    <h4>Alexandru</h4>
+                    <ul>
+                        <li><span>© 2025 All Rights Reserved</span></li>
+                        <li><span>Made With Passion</span></li>
+                        <li><span>alex@alexandrudev.com</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contact-popup">
+        <div class="contact-popup-content">
+            <div class="close-contact">×</div>
+            <h2>Get in Touch</h2>
+            <p>Let's discuss your project or just say hello.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Subject">
+                <textarea placeholder="Your message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="creative-background">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="animated-gradient"></div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="menu-btn">
+                <span>MENU</span>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">ALEXANDRU</span>
+                </a>
+            </div>
+            <div class="cta-btn">
+                <a href="#" class="contact-trigger">CONTACT</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="overline">Portfolio</span>
+                <h1>Hey, I'm Alex<br>Crafting digital<br>immersive<br>experiences</h1>
+                <p class="hero-description">
+                    Welcome to my world. I love building modern, pixel-perfect websites for personal and business use.
+                </p>
+                <div class="hero-cta">
+                    <a href="#work" class="btn">VIEW WORK</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-works" id="work">
+            <div class="section-heading">
+                <div class="divider"></div>
+                <h2>Selected Works</h2>
+            </div>
+            <div class="slider-container">
+                <div class="work-slider">
+                    <div class="work-slide" data-project="provocis">
+                        <div class="work-image text-display">
+                            <div class="project-title">PROVOCIS</div>
+                            <div class="project-role">CTO & Co-Founder</div>
+                        </div>
+                        <h3>Provocis</h3>
+                        <p>App Development, Web Development</p>
+                    </div>
+                    <div class="work-slide" data-project="recezy">
+                        <div class="work-image text-display">
+                            <div class="project-title">RECEZY</div>
+                            <div class="project-role">Web Development</div>
+                        </div>
+                        <h3>Recezy</h3>
+                        <p>Web Development</p>
+                    </div>
+                    <div class="work-slide" data-project="adevtech">
+                        <div class="work-image text-display">
+                            <div class="project-title">ADEVTECH</div>
+                            <div class="project-role">Web Development</div>
+                        </div>
+                        <h3>AdevTech</h3>
+                        <p>Web Development</p>
+                    </div>
+                    <div class="work-slide no-click">
+                        <div class="work-image text-display">
+                            <div class="project-title">YOUR PROJECT</div>
+                            <div class="project-role">Could Be Next</div>
+                        </div>
+                        <h3>Your Project</h3>
+                        <p>Let's Create Something Amazing</p>
+                    </div>
+                    <div class="work-slide no-click">
+                        <div class="work-image text-display">
+                            <div class="project-title">YOUR VISION</div>
+                            <div class="project-role">Brought To Life</div>
+                        </div>
+                        <h3>Your Project</h3>
+                        <p>Ready To Transform Your Ideas?</p>
+                    </div>
+                </div>
+                <div class="slider-scrollbar">
+                    <div class="slider-scrollbar-thumb"></div>
+                </div>
+            </div>
+            <div class="work-cta">
+                <span class="btn-text disabled">View all work</span>
+            </div>
+        </section>
+
+        <section class="about-snippet" id="about">
+            <div class="about-content">
+                <div class="section-heading">
+                    <div class="divider"></div>
+                    <h2>About</h2>
+                </div>
+                <p>
+                    I'm Alex, a passionate full-stack developer with a love for creating elegant solutions to complex problems. My journey in software development has led me to work with a diverse range of technologies and frameworks.
+                </p>
+                <p>
+                    I specialize in building modern web applications, with a strong focus on clean code and optimal performance. My experience extends to cloud technologies and containerization, ensuring scalable and maintainable solutions.
+                </p>
+            </div>
+            <div class="about-decoration">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <svg class="frame-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <path d="M10,2 L90,2 C95,2 98,5 98,10 L98,90 C98,95 95,98 90,98 L10,98 C5,98 2,95 2,90 L2,10 C2,5 5,2 10,2 Z" fill="none" stroke="var(--accent-color)" stroke-width="0.5"></path>
+                        </svg>
+                    </div>
+                    <div class="text-reveal">STAY CREATIVE</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="section-heading">
+                <div class="divider"></div>
+                <h2>Services</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-item appear">
+                    <h3>01</h3>
+                    <h4>Web Development</h4>
+                    <p>Creating responsive, modern websites with clean code and optimal performance for businesses and individuals.</p>
+                </div>
+                <div class="service-item appear">
+                    <h3>02</h3>
+                    <h4>App Development</h4>
+                    <p>Building cross-platform mobile applications with intuitive interfaces and seamless functionality.</p>
+                </div>
+                <div class="service-item appear">
+                    <h3>03</h3>
+                    <h4>Full-Stack Solutions</h4>
+                    <p>Developing end-to-end solutions from database architecture to front-end implementation, ensuring scalability and security.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact-section">
+            <div class="section-heading">
+                <div class="divider"></div>
+                <h2>Get in Touch</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Let's Create Something Amazing</h3>
+                    <p>Have a project in mind or just want to say hello? I'd love to hear from you.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <h4>Email</h4>
+                            <p>hello@alexandru.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>Follow</h4>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                                </a>
+                                <span class="social-icon disabled">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form-section" id="contact-form">
+                        <div class="form-message"></div>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your email address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What is this regarding?">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>ALEXANDRU</h3>
+                <p>Crafting digital experiences that inspire and elevate your online presence.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <a href="#work">Work</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact-section">Contact</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>© 2025</h3>
+                <p>All rights reserved</p>
+                <p class="footer-credit">Made with passion</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="project-modal">
+        <div class="modal-content">
+            <div class="modal-close">×</div>
+            <div class="modal-header">
+                <h2 class="modal-title">Project Title</h2>
+                <p class="modal-tags">Tags</p>
+                <p class="modal-role">Role</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-description">
+                    <h3>Project Overview</h3>
+                    <p class="modal-text">Project description goes here.</p>
+                    
+                    <h3>Challenges & Solutions</h3>
+                    <p class="modal-challenges">Challenges and solutions go here.</p>
+                    
+                    <h3>Technologies</h3>
+                    <ul class="modal-tech-list">
+                        <li>Technology 1</li>
+                        <li>Technology 2</li>
+                        <li>Technology 3</li>
+                    </ul>
+                    
+                    <div class="modal-cta">
+                        <a href="#" class="modal-btn" target="_blank">View Live Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Custom cursor
+            const cursor = document.querySelector('.cursor');
+            const links = document.querySelectorAll('a');
+            const menuBtn = document.querySelector('.menu-btn');
+            const closeMenu = document.querySelector('.close-menu');
+            const closeContact = document.querySelector('.close-contact');
+            const contactTrigger = document.querySelector('.contact-trigger');
+            const slider = document.querySelector('.work-slider');
+            const buttons = document.querySelectorAll('.btn');
+            const aboutImage = document.querySelector('.about-image');
+            
+            // Contact form handling
+            const contactForm = document.getElementById('contact-form');
+            const formMessage = document.querySelector('.form-message');
+            
+            // Project modal functionality
+            const workSlides = document.querySelectorAll('.work-slide');
+            const projectModal = document.querySelector('.project-modal');
+            const modalClose = document.querySelector('.modal-close');
+            const modalTitle = document.querySelector('.modal-title');
+            const modalTags = document.querySelector('.modal-tags');
+            const modalText = document.querySelector('.modal-text');
+            const modalTechList = document.querySelector('.modal-tech-list');
+            const modalBtn = document.querySelector('.modal-btn');
+            
+            // Project data
+            const projectData = {
+                provocis: {
+                    title: 'Provocis',
+                    tags: 'App Development, Web Development',
+                    role: 'CTO & Co-Founder',
+                    description: 'ProVocis is an AI-powered vocabulary training platform designed to help users improve job-specific language skills in a fun, effective, and personalized way. Built with a focus on professional growth, ProVocis blends gamification, smart quizzes, and daily challenges to create an engaging learning experience. Whether on mobile or web, users can track their progress, build streaks, and develop real-world communication confidence across various industries.',
+                    challenges: 'Developing ProVocis came with key challenges. First, we needed a dynamic learning system that adapts to each user\'s skill level and profession. To solve this, we built a custom AI backend that analyzes performance and adjusts difficulty in real time. Second, keeping users motivated was critical. Instead of using a traditional heart system, we introduced a streak-based reward model and unique quiz types to make learning addictive, not stressful. Finally, we had to ensure cross-platform compatibility and low-latency sync for a seamless experience. Leveraging Flutter and Firebase, we achieved a smooth, consistent UX across iOS, Android, and the web.',
+                    technologies: ['Flutter', 'Firebase', 'Dart', 'Node.js', 'React', 'React Native', 'GraphQL', 'REST API', 'Git', 'CI/CD'],
+                    websiteUrl: 'https://provocis.com'
+                },
+                recezy: {
+                    title: 'Recezy',
+                    tags: 'Web Development',
+                    role: 'Web Developer',
+                    description: 'RecEzy is an AI-powered recruitment platform designed to streamline and enhance the hiring process. At its core is Eko, an intelligent bot that automates tasks such as candidate matching, interview scheduling, and onboarding integration. The platform offers advanced analytics, centralized dashboards, and seamless job board integrations with platforms like LinkedIn and Indeed. With diverse sourcing channels and real-time candidate screening, RecEzy empowers businesses to efficiently build and manage a robust talent pipeline.',
+                    challenges: 'Creating Recezy involved implementing a responsive design that would work seamlessly across all devices while maintaining fast load times. The search functionality needed to be powerful yet simple to use, with advanced filtering capabilities for dietary restrictions and ingredient availability.',
+                    technologies: ['HTML', 'CSS', 'JavaScript'],
+                    websiteUrl: 'https://www.recezy.ai'
+                },
+                adevtech: {
+                    title: 'AdevTech',
+                    tags: 'Web Development',
+                    role: 'Web Developer',
+                    description: 'Adev Tech specializes in AI-driven HR technology solutions aimed at automating and streamlining recruitment processes while preserving a human touch. Their SaaS-based platform enhances efficiency, reduces time-to-hire, and improves candidate matching, allowing HR teams to focus on strategic tasks.',
+                    challenges: 'The AdevTech project required creating a sophisticated design that would appeal to enterprise clients while ensuring extremely fast load times. We implemented advanced animations and transitions that needed to work flawlessly across all browsers, while maintaining a clean, professional aesthetic.',
+                    technologies: ['HTML', 'CSS', 'JavaScript'],
+                    websiteUrl: 'https://www.adevtechcorp.com'
+                },
+                'your-project': {
+                    title: 'Your Project',
+                    tags: 'Let\'s Create Something Amazing',
+                    role: 'Looking for a Developer?',
+                    description: 'This could be your project. I\'m always excited to take on new challenges and help clients bring their digital visions to life. Whether you need a website, mobile app, or complex web application, I\'m ready to collaborate and create something exceptional together.',
+                    challenges: 'Every project comes with its own unique challenges, and I thrive on finding elegant solutions to complex problems. My approach is to first understand your business goals, then develop a technical strategy that will help you achieve them in the most efficient and effective way possible.',
+                    technologies: ['React', 'Next.js', 'Vue.js', 'Node.js', 'TypeScript', 'Python', 'AWS', 'Docker', 'and more...'],
+                    websiteUrl: '#contact-section'
+                },
+                'your-project-2': {
+                    title: 'Your Vision',
+                    tags: 'Ready To Transform Your Ideas?',
+                    role: 'Partnership Opportunity',
+                    description: 'Have a great idea but not sure how to turn it into reality? Let\'s work together to create a digital product that exceeds expectations. I bring technical expertise, creative problem-solving, and a commitment to quality that will help your project succeed.',
+                    challenges: 'The digital landscape is constantly evolving, and staying ahead of the curve is essential. I keep up with the latest technologies and best practices to ensure your project is built on a solid foundation that can adapt and grow with your business needs.',
+                    technologies: ['Custom tech stack tailored to your specific project needs'],
+                    websiteUrl: '#contact-section'
+                }
+            };
+            
+            // Add click event listeners to work slides
+            workSlides.forEach(slide => {
+                if (!slide.classList.contains('no-click')) {
+                    slide.addEventListener('click', function(e) {
+                        // Only open modal if we didn't just finish dragging
+                        if (!wasDragging) {
+                            const projectId = this.getAttribute('data-project');
+                            
+                            if (projectId && projectData[projectId]) {
+                                const project = projectData[projectId];
+                                
+                                // Update modal content
+                                modalTitle.textContent = project.title;
+                                modalTags.textContent = project.tags;
+                                document.querySelector('.modal-role').textContent = project.role || '';
+                                modalText.textContent = project.description;
+                                
+                                // Update challenges section if available
+                                const modalChallenges = document.querySelector('.modal-challenges');
+                                if (modalChallenges && project.challenges) {
+                                    modalChallenges.textContent = project.challenges;
+                                }
+                                
+                                // Update technologies list
+                                modalTechList.innerHTML = '';
+                                project.technologies.forEach(tech => {
+                                    const li = document.createElement('li');
+                                    li.textContent = tech;
+                                    modalTechList.appendChild(li);
+                                });
+                                
+                                // Update button link
+                                modalBtn.href = project.websiteUrl;
+                                
+                                // Show modal
+                                projectModal.classList.add('active');
+                                document.body.style.overflow = 'hidden';
+                            }
+                        }
+                    });
+                }
+            });
+            
+            // Close modal
+            modalClose.addEventListener('click', function() {
+                projectModal.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+            
+            // Close modal when clicking outside of content
+            projectModal.addEventListener('click', function(e) {
+                if (e.target === projectModal) {
+                    projectModal.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Clear previous messages
+                    formMessage.textContent = '';
+                    formMessage.classList.remove('success', 'error');
+                    
+                    // Add loading state
+                    contactForm.classList.add('form-loading');
+                    
+                    // Get form data
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const subject = document.getElementById('subject').value || 'Contact Form Submission';
+                    const message = document.getElementById('message').value;
+                    
+                    // Prepare parameters for EmailJS
+                    const params = {
+                        from_name: name,
+                        from_email: email,
+                        email_id: email,
+                        reply_to: email,
+                        subject: subject,
+                        message: message
+                    };
+                    
+                    // First send the notification email
+                    emailjs.send('service_rjeztio', 'template_o5o0x78', params)
+                        .then(function() {
+                            // Then send the auto-reply email
+                            return emailjs.send('service_rjeztio', 'template_2r59ztm', {
+                                email: email,
+                            });
+                        })
+                        .then(function() {
+                            // Both emails sent successfully
+                            contactForm.classList.remove('form-loading');
+                            formMessage.textContent = 'Your message has been sent successfully!';
+                            formMessage.classList.add('success');
+                            contactForm.reset();
+                            formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                            
+                            // Optional: redirect to thank you page
+                            setTimeout(() => {
+                                window.location.href = 'thanks.html';
+                            }, 2000);
+                        })
+                        .catch(function(error) {
+                            // Error sending email
+                            console.error('EmailJS Error:', error);
+                            contactForm.classList.remove('form-loading');
+                            formMessage.textContent = 'There was a problem sending your message. Please try again later.';
+                            formMessage.classList.add('error');
+                        });
+                });
+            }
+            
+            // Disable default cursor on all clickable elements
+            document.querySelectorAll('a, button, .menu-btn, .close-menu, .close-contact, .work-slider, .about-image').forEach(el => {
+                el.style.cursor = 'none';
+            });
+            
+            window.addEventListener('mousemove', function(e) {
+                const posX = e.clientX;
+                const posY = e.clientY;
+                
+                cursor.style.left = `${posX}px`;
+                cursor.style.top = `${posY}px`;
+            });
+            
+            // Cursor effects on interactive elements
+            links.forEach(link => {
+                link.addEventListener('mouseenter', () => {
+                    cursor.classList.add('link-hover');
+                });
+                
+                link.addEventListener('mouseleave', () => {
+                    cursor.classList.remove('link-hover');
+                });
+            });
+            
+            buttons.forEach(button => {
+                button.addEventListener('mouseenter', () => {
+                    cursor.classList.add('button-hover');
+                });
+                
+                button.addEventListener('mouseleave', () => {
+                    cursor.classList.remove('button-hover');
+                });
+            });
+            
+            [menuBtn, closeMenu, closeContact, contactTrigger].forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    cursor.classList.add('pointer-hover');
+                });
+                
+                el.addEventListener('mouseleave', () => {
+                    cursor.classList.remove('pointer-hover');
+                });
+            });
+            
+            // About image hover effect
+            if (aboutImage) {
+                const textReveal = document.querySelector('.text-reveal');
+                
+                // Set initial CSS variables
+                document.documentElement.style.setProperty('--cursor-x', '50%');
+                document.documentElement.style.setProperty('--cursor-y', '50%');
+                
+                aboutImage.addEventListener('mouseenter', () => {
+                    cursor.classList.add('image-hover');
+                    textReveal.style.opacity = '1';
+                });
+                
+                aboutImage.addEventListener('mouseleave', () => {
+                    cursor.classList.remove('image-hover');
+                    cursor.style.transform = 'translate(-50%, -50%)';
+                    textReveal.style.opacity = '0';
+                });
+                
+                // Update mask position based on cursor position
+                aboutImage.addEventListener('mousemove', (e) => {
+                    const rect = aboutImage.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    
+                    // Update the CSS variables for the cursor position
+                    document.documentElement.style.setProperty('--cursor-x', `${x}px`);
+                    document.documentElement.style.setProperty('--cursor-y', `${y}px`);
+                });
+            }
+            
+            // Slider cursor effects
+            slider.addEventListener('mouseenter', () => {
+                cursor.classList.add('slider-hover');
+                document.body.style.cursor = 'none';
+            });
+            
+            slider.addEventListener('mouseleave', () => {
+                cursor.classList.remove('slider-hover');
+            });
+            
+            // Menu functionality
+            const menuOverlay = document.querySelector('.menu-overlay');
+            const menuLinks = document.querySelectorAll('.menu-links a');
+            const menuContent = document.querySelector('.menu-content');
+            
+            menuBtn.addEventListener('click', function() {
+                // Remove closing class if it exists
+                menuOverlay.classList.remove('closing');
+                // Add active class to open the menu
+                menuOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+            
+            closeMenu.addEventListener('click', function() {
+                // Just add closing class and remove active class
+                // Keep content visible during animation
+                menuOverlay.classList.add('closing');
+                menuOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+                
+                // After animation completes, clean up
+                setTimeout(() => {
+                    menuOverlay.classList.remove('closing');
+                }, 1000);
+            });
+            
+            menuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    // Just add closing class and remove active class
+                    // Keep content visible during animation
+                    menuOverlay.classList.add('closing');
+                    menuOverlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                    
+                    // After animation completes, clean up
+                    setTimeout(() => {
+                        menuOverlay.classList.remove('closing');
+                    }, 1000);
+                });
+            });
+            
+            // Contact popup functionality
+            const contactPopup = document.querySelector('.contact-popup');
+            
+            contactTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' });
+            });
+            
+            closeContact.addEventListener('click', function() {
+                contactPopup.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+            
+            // Project slider functionality
+            const slides = document.querySelectorAll('.work-slide');
+            const sliderScrollbarThumb = document.querySelector('.slider-scrollbar-thumb');
+            
+            let slideWidth = slides[0].offsetWidth;
+            let slideMargin = 40; // This should match the gap in CSS
+            let slideIndex = 0;
+            let slidesToShow = getSlidesToShow();
+            let maxScroll = calculateMaxScroll();
+            let lastTranslate = 0;
+            
+            function getSlidesToShow() {
+                if (window.innerWidth < 768) return 1;
+                if (window.innerWidth < 1200) return 2;
+                return 3;
+            }
+            
+            function calculateMaxScroll() {
+                // Account for container width to ensure all slides are visible
+                const sliderContainer = document.querySelector('.slider-container');
+                const containerWidth = sliderContainer.offsetWidth;
+                const totalSlidesWidth = (slideWidth + slideMargin) * slides.length - slideMargin;
+                
+                // Adjust calculation to ensure the last slide is fully visible
+                return Math.max(0, totalSlidesWidth - containerWidth);
+            }
+            
+            // Initialize slider
+            function initSlider() {
+                slidesToShow = getSlidesToShow();
+                slideWidth = slides[0].offsetWidth;
+                maxScroll = calculateMaxScroll();
+                updateScrollbarThumb();
+            }
+            
+            function updateSliderPosition(translate) {
+                // Store original translate for bounce effect
+                let originalTranslate = translate;
+                
+                // Check if we're past the boundaries for bounce effect
+                const isPastStart = translate > 0;
+                const isPastEnd = translate < -maxScroll;
+                
+                // Apply resistance if past boundaries
+                if (isPastStart) {
+                    translate = translate * 0.3; // Resistance factor
+                } else if (isPastEnd) {
+                    translate = -maxScroll + (translate + maxScroll) * 0.3; // Resistance factor
+                }
+                
+                // Apply the transform
+                slider.style.transform = `translateX(${translate}px)`;
+                lastTranslate = translate;
+                
+                // Update slide index for slides within bounds
+                if (!isPastStart && !isPastEnd) {
+                    slideIndex = Math.round(Math.abs(translate) / (slideWidth + slideMargin));
+                }
+                
+                // Update scrollbar thumb position
+                updateScrollbarThumb();
+                
+                // Return the translate value for tracking
+                return translate;
+            }
+            
+            function updateScrollbarThumb() {
+                // Calculate total slides and visible portion
+                const totalSlidesWidth = (slideWidth + slideMargin) * slides.length - slideMargin;
+                const containerWidth = document.querySelector('.slider-container').offsetWidth;
+                
+                // Calculate thumb width based on visible portion
+                const thumbWidth = Math.min((containerWidth / totalSlidesWidth) * 100, 100);
+                
+                // Calculate left position
+                const scrollPercentage = Math.abs(lastTranslate) / maxScroll;
+                let leftPos = 0;
+                
+                if (maxScroll > 0) {
+                    // Only adjust position if there's content to scroll
+                    leftPos = scrollPercentage * (100 - thumbWidth);
+                }
+                
+                // Apply the styles
+                sliderScrollbarThumb.style.width = `${thumbWidth}%`;
+                sliderScrollbarThumb.style.left = `${leftPos}%`;
+            }
+            
+            // Handle slider dragging
+            let isDragging = false;
+            let wasDragging = false;
+            let dragDistance = 0;
+            let startPos = 0;
+            let currentTranslate = 0;
+            let dragVelocity = 0;
+            let lastDragPosition = 0;
+            let lastDragTime = 0;
+            let animationId = null;
+            let dragThreshold = 5; // Lower threshold for improved touch response
+            
+            slider.addEventListener('mousedown', dragStart);
+            slider.addEventListener('touchstart', dragStart, { passive: true });
+            window.addEventListener('mouseup', dragEnd);
+            window.addEventListener('touchend', dragEnd);
+            window.addEventListener('mousemove', drag);
+            window.addEventListener('touchmove', drag, { passive: false });
+            window.addEventListener('mouseleave', dragEnd);
+            
+            function dragStart(e) {
+                // Return if an element in the slide asks for click
+                if (e.target.closest('a, button')) return;
+                
+                startPos = getPositionX(e);
+                lastDragPosition = startPos;
+                lastDragTime = Date.now();
+                isDragging = true;
+                wasDragging = false;
+                dragDistance = 0;
+                currentTranslate = getTranslateX(slider);
+                
+                // Cancel any ongoing animation
+                if (animationId !== null) {
+                    cancelAnimationFrame(animationId);
+                    animationId = null;
+                }
+                
+                slider.style.transition = 'none';
+                cursor.style.transform = 'translate(-50%, -50%) scale(0.8)';
+            }
+            
+            function drag(e) {
+                if (!isDragging) return;
+                
+                // Prevent default scrolling on touch devices
+                if (e.type === 'touchmove') {
+                    e.preventDefault();
+                }
+                
+                const currentPosition = getPositionX(e);
+                const diff = currentPosition - startPos;
+                const absDiff = Math.abs(diff);
+                dragDistance += Math.abs(currentPosition - lastDragPosition);
+                
+                // Only start dragging after passing a small threshold
+                if (dragDistance > dragThreshold) {
+                    wasDragging = true;
+                    
+                    const translate = currentTranslate + diff;
+                    
+                    // Calculate velocity for momentum scrolling
+                    const currentTime = Date.now();
+                    if (currentTime - lastDragTime > 5) { // Smaller interval for more accurate velocity
+                        dragVelocity = (currentPosition - lastDragPosition) / (currentTime - lastDragTime) * 15;
+                        lastDragPosition = currentPosition;
+                        lastDragTime = currentTime;
+                    }
+                    
+                    // Update slider position with resistance at boundaries
+                    updateSliderPosition(translate);
+                }
+            }
+            
+            function dragEnd(e) {
+                if (!isDragging) return;
+                
+                isDragging = false;
+                
+                slider.style.transition = 'transform 0.5s cubic-bezier(0.25, 1, 0.5, 1)';
+                cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+                
+                // Keep wasDragging true for a short period to prevent click events
+                setTimeout(() => {
+                    wasDragging = false;
+                }, 300);
+                
+                // Return if drag distance is too small (likely a click/tap)
+                if (dragDistance < dragThreshold) {
+                    return;
+                }
+                
+                // Get the current translate value
+                const currentPosition = getTranslateX(slider);
+                
+                // Check if we need to snap back to boundaries
+                if (currentPosition > 0) {
+                    // Snap back to start
+                    updateSliderPosition(0);
+                    slider.style.transition = 'transform 0.5s cubic-bezier(0.25, 1, 0.5, 1)';
+                    slideIndex = 0;
+                } else if (currentPosition < -maxScroll) {
+                    // Snap back to end
+                    updateSliderPosition(-maxScroll);
+                    slider.style.transition = 'transform 0.5s cubic-bezier(0.25, 1, 0.5, 1)';
+                    slideIndex = slides.length - slidesToShow;
+                } else if (Math.abs(dragVelocity) > 0.3) {
+                    // Apply momentum scrolling if drag was fast enough
+                    let momentum = dragVelocity * 40;
+                    
+                    // Cap the momentum to avoid excessive scrolling
+                    if (momentum > 0) momentum = Math.min(momentum, 300);
+                    if (momentum < 0) momentum = Math.max(momentum, -300);
+                    
+                    let targetTranslate = currentPosition + momentum;
+                    
+                    // Ensure we don't scroll past boundaries
+                    if (targetTranslate > 0) targetTranslate = 0;
+                    if (targetTranslate < -maxScroll) targetTranslate = -maxScroll;
+                    
+                    // Update slide index based on target position
+                    slideIndex = Math.round(Math.abs(targetTranslate) / (slideWidth + slideMargin));
+                    
+                    // Make sure we're snapping to a valid slide position
+                    targetTranslate = -slideIndex * (slideWidth + slideMargin);
+                    
+                    // Apply the transform with smooth transition
+                    slider.style.transform = `translateX(${targetTranslate}px)`;
+                    lastTranslate = targetTranslate;
+                    
+                    // Update scrollbar
+                    updateScrollbarThumb();
+                } else {
+                    // If slow drag, snap to nearest slide
+                    const targetIndex = Math.round(Math.abs(currentPosition) / (slideWidth + slideMargin));
+                    const targetTranslate = -targetIndex * (slideWidth + slideMargin);
+                    
+                    // Apply the transform with smooth transition
+                    slider.style.transform = `translateX(${targetTranslate}px)`;
+                    lastTranslate = targetTranslate;
+                    slideIndex = targetIndex;
+                    
+                    // Update scrollbar
+                    updateScrollbarThumb();
+                }
+                
+                // Reset velocity
+                dragVelocity = 0;
+            }
+            
+            function getPositionX(e) {
+                return e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+            }
+            
+            function getTranslateX(element) {
+                const style = window.getComputedStyle(element);
+                
+                try {
+                    // Try DOMMatrix first (standard)
+                    const matrix = new DOMMatrix(style.transform);
+                    return matrix.m41;
+                } catch (e) {
+                    try {
+                        // Fallback to WebKitCSSMatrix for Safari
+                        const matrix = new WebKitCSSMatrix(style.transform);
+                        return matrix.m41;
+                    } catch (e2) {
+                        // Fallback for other browsers - parse the transform string
+                        if (style.transform === 'none') return 0;
+                        
+                        const transformValues = style.transform.match(/matrix.*\((.+)\)/);
+                        if (transformValues && transformValues[1]) {
+                            const values = transformValues[1].split(', ');
+                            return parseFloat(values[4] || 0);
+                        }
+                        return 0;
+                    }
+                }
+            }
+            
+            // Scrollbar dragging
+            let isScrollbarDragging = false;
+            
+            sliderScrollbarThumb.addEventListener('mousedown', scrollbarDragStart);
+            window.addEventListener('mousemove', scrollbarDrag);
+            window.addEventListener('mouseup', scrollbarDragEnd);
+            
+            function scrollbarDragStart(e) {
+                e.preventDefault();
+                isScrollbarDragging = true;
+                const scrollbar = document.querySelector('.slider-scrollbar');
+                scrollbar.style.height = '4px';
+                scrollbar.style.opacity = '1';
+                document.body.style.userSelect = 'none';
+                
+                // Immediately update position based on click
+                scrollbarDrag(e);
+            }
+            
+            function scrollbarDrag(e) {
+                if (!isScrollbarDragging) return;
+                
+                const scrollbar = document.querySelector('.slider-scrollbar');
+                const scrollbarRect = scrollbar.getBoundingClientRect();
+                const thumbWidth = parseFloat(sliderScrollbarThumb.style.width) || (slidesToShow / slides.length) * 100;
+                
+                // Calculate percentage position (clamped between 0 and max)
+                let percentage = (e.clientX - scrollbarRect.left) / scrollbarRect.width;
+                percentage = Math.max(0, Math.min(percentage, 1));
+                
+                // Adjust for thumb width to prevent overflow
+                const maxPercentage = 1 - (thumbWidth / 100);
+                percentage = Math.min(percentage, maxPercentage);
+                
+                // Calculate new slide index and translate value
+                const totalSlides = slides.length - slidesToShow;
+                slideIndex = Math.round(percentage * totalSlides);
+                const targetTranslate = -slideIndex * (slideWidth + slideMargin);
+                
+                // Update slider position with smooth transition
+                slider.style.transition = 'transform 0.3s ease';
+                slider.style.transform = `translateX(${targetTranslate}px)`;
+                lastTranslate = targetTranslate;
+                
+                // Update scrollbar visually
+                updateScrollbarThumb();
+            }
+            
+            function scrollbarDragEnd() {
+                if (!isScrollbarDragging) return;
+                
+                isScrollbarDragging = false;
+                const scrollbar = document.querySelector('.slider-scrollbar');
+                scrollbar.style.height = '2px';
+                scrollbar.style.opacity = '0.7';
+                document.body.style.userSelect = '';
+            }
+            
+            // Animate shapes on scroll
+            const shapes = document.querySelectorAll('.shape');
+            
+            window.addEventListener('scroll', function() {
+                const scrollY = window.scrollY;
+                const viewportHeight = window.innerHeight;
+                
+                shapes.forEach((shape, index) => {
+                    const speed = 0.05 + (index * 0.02);
+                    const yPos = scrollY * speed;
+                    const rotation = scrollY * (0.02 + (index * 0.01));
+                    
+                    shape.style.transform = `translateY(${yPos}px) rotate(${rotation}deg)`;
+                });
+                
+                // Check for appear elements
+                document.querySelectorAll('.appear').forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const elementBottom = element.getBoundingClientRect().bottom;
+                    
+                    // If element is partly visible
+                    if (elementTop < viewportHeight - 100 && elementBottom > 0) {
+                        element.classList.add('active');
+                    }
+                });
+            });
+            
+            // Handle window resize
+            window.addEventListener('resize', function() {
+                // Update dimensions
+                slideWidth = slides[0].offsetWidth;
+                slidesToShow = getSlidesToShow();
+                maxScroll = calculateMaxScroll();
+                
+                // Reset position if we're past the new max scroll
+                const currentPosition = getTranslateX(slider);
+                if (currentPosition < -maxScroll) {
+                    slideIndex = Math.floor(maxScroll / (slideWidth + slideMargin));
+                    slider.style.transition = 'none';
+                    updateSliderPosition(-slideIndex * (slideWidth + slideMargin));
+                    
+                    // Re-enable transition after the update
+                    setTimeout(() => {
+                        slider.style.transition = 'transform 0.5s cubic-bezier(0.25, 1, 0.5, 1)';
+                    }, 50);
+                }
+                
+                // Update scrollbar
+                updateScrollbarThumb();
+            });
+            
+            // Initialize on load
+            initSlider();
+        });
+    </script>
+</body>
+</html> 
