@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Thank You | Alexandru</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .thanks-page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 2rem;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        
+        .thanks-container {
+            max-width: 600px;
+            text-align: center;
+            padding: 0 1rem;
+        }
+        
+        .thanks-title {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            font-weight: 400;
+            margin: 0 0 1.5rem;
+            line-height: 1.1;
+        }
+        
+        .thanks-message {
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            line-height: 1.6;
+            margin-bottom: 2.5rem;
+            opacity: 0.8;
+        }
+        
+        .home-link {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            border: 1px solid var(--text-color);
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+        
+        .home-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+        
+        .accent {
+            color: var(--accent-color);
+        }
+        
+        /* Responsive styles */
+        @media (max-width: 576px) {
+            .thanks-container {
+                padding: 0;
+            }
+            
+            .thanks-title {
+                font-size: clamp(2rem, 6vw, 3rem);
+                margin-bottom: 1rem;
+            }
+            
+            .thanks-message {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+            
+            .home-link {
+                padding: 0.6rem 1.5rem;
+                font-size: 0.8rem;
+                width: 100%;
+                max-width: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor"></div>
+    
+    <div class="thanks-page">
+        <div class="thanks-container">
+            <h1 class="thanks-title">Thank <span class="accent">You</span></h1>
+            <p class="thanks-message">Your message has been received. I'll review it and get back to you as soon as possible.</p>
+            <a href="index.html" class="home-link">BACK TO HOME</a>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Custom cursor
+            const cursor = document.querySelector('.cursor');
+            const links = document.querySelectorAll('a');
+            
+            // Only enable custom cursor on non-mobile devices
+            if (window.innerWidth > 768) {
+                // Implement custom cursor
+                document.addEventListener('mousemove', function(e) {
+                    const posX = e.clientX;
+                    const posY = e.clientY;
+                    
+                    cursor.style.left = `${posX}px`;
+                    cursor.style.top = `${posY}px`;
+                });
+                
+                // Cursor effects on interactive elements
+                links.forEach(link => {
+                    link.addEventListener('mouseenter', () => {
+                        cursor.classList.add('link-hover');
+                    });
+                    
+                    link.addEventListener('mouseleave', () => {
+                        cursor.classList.remove('link-hover');
+                    });
+                });
+            } else {
+                // Hide cursor on mobile
+                cursor.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html> 
